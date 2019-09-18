@@ -1,0 +1,7 @@
+node_modules
+build
+gulp
+gulpfile.js
+source/vendors
+source/scripts/vendors.js
+*.yml

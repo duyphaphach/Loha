@@ -1,0 +1,184 @@
+/**
+ * Pages - Home
+ **************
+ */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .page-home {
+    #section_1 {
+      .container {
+        .container-fixed();
+
+        .sidebar-menu {
+          .make-md-column(3);
+
+          ul.menu {
+            list-style-type: none;
+            padding: 0;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            max-width: 274px;
+
+            li.menu-item {
+              position: relative;
+              padding: 15px 25px;
+              line-height: 16px;
+              font-size: 14px;
+              transition: all 0.3s ease-out;
+
+              &:not(:last-of-type) {
+                border-bottom: 1px solid @color-alto;
+              }
+
+              & > a {
+                .text-scorpion;
+
+                font-family: 'Roboto Medium', Arial, sans-serif;
+                text-decoration: none;
+
+                i {
+                  float: right;
+                  font-size: 14px;
+                }
+              }
+
+              .sub-menu {
+                display: none;
+
+                &:hover {
+                  display: block;
+                }
+              }
+
+              &:hover {
+                & > a {
+                  .text-cardinal;
+                }
+
+                .sub-menu {
+                  .background-white;
+
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: calc(100% + 1px);
+                  width: 418px;
+                  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.19);
+                  border-radius: 2px;
+                  padding: 24px 32px;
+                  z-index: 1;
+
+                  .title {
+                    .text-cardinal;
+
+                    margin-bottom: 15px;
+                    font-family: 'Roboto Medium', Arial, sans-serif;
+                    font-weight: 550;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                  }
+
+                  .text {
+                    .text-scorpion;
+
+                    margin-bottom: 24px;
+                    font-family: 'Roboto Regular', Arial, sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                  }
+
+                  ul {
+                    .make-row();
+
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                      .make-md-column(6);
+
+                      font-family: 'Roboto Regular', Arial, sans-serif;
+                      font-size: 14px;
+                      line-height: 20px;
+
+                      a {
+                        .text-scorpion;
+                      }
+
+                      &:hover {
+                        a {
+                          .text-cardinal;
+
+                          text-decoration: underline;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .content {
+          .make-md-column(9);
+
+          #section_1__content__group_1 {
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          button {
+            .text-dusty-gray;
+            .background-white;
+
+            float: right;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 10px;
+            vertical-align: middle;
+            font-size: 18px;
+            font-weight: 600;
+            width: 32px;
+            height: 32px;
+            border: 1px solid @color-alto;
+            outline: none;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+
+            &:hover,
+            &:focus {
+              .background-dusty-gray;
+              .text-white;
+
+              border-color: @color-dust-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}
