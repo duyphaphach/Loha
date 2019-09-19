@@ -14,6 +14,18 @@
       .column {
         &.contact {
           .make-md-column(4);
+
+          .list {
+            .row;
+
+            .item-1 {
+              .make-md-column(3);
+            }
+
+            .item-2 {
+              .make-md-column(9);
+            }
+          }
         }
 
         &.quick-links {
@@ -94,6 +106,7 @@
               width: 100%;
               padding: 0 21px;
               line-height: 48px;
+              border-radius: 3px 0 0 3px;
 
               &:focus ~ .text-hint {
                 -webkit-transition: all 0.3s;
@@ -110,9 +123,11 @@
               .background-cardinal;
               .text-white;
               .text-uppercase;
+              .text-center;
               
               display: table-cell;
               padding: 0 21px;
+              border-radius: 0 2px 2px 0;
 
               &:hover {
                 text-decoration: none;

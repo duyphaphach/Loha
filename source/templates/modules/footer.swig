@@ -5,9 +5,17 @@
           <div class="column contact" id="footer__footer_top__row__column_1">
             <div class="title">LIÊN HỆ</div>
             <div class="content">
-              <a class="address">Địa chỉ:   Ô 25, Lô 10, Đền Lừ 1, Hoàng Mai, Hà Nội</a>
-              <a class="tel">Tel:   024 85 85 85 28 - 0934 363 226</a>
-              <a class="email">Email:   support@anphat.vn</a>
+                <div class="list">
+                  <div class="item-1">
+                    <a href="#" class="address">Địa chỉ:</a>
+                    <a href="#" class="tel">Tel:</a>
+                    <a href="#" class="email">Email:</a>
+                  </div>
+                  <div class="item-2">
+                    <a href="#" class="address">Ô 25, Lô 10, Đền Lừ 1, Hoàng Mai, Hà Nội</a>
+                    <a href="#" class="tel">024 85 85 85 28 - 0934 363 226</a>
+                    <a href="#" class="email">support@anphat.vn</a></div>
+                </div>
             </div>
           </div>
           <div class="column quick-links" id="footer__footer_top__row__column_2">
