@@ -5,6 +5,9 @@
 
 .page-home {
   #section_1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     .container {
       .container-fixed();
 
@@ -13,7 +16,7 @@
 
         ul.menu {
           list-style-type: none;
-          padding: 0 25px;
+          padding: 0;
           border: 1px solid #ddd;
           border-radius: 2px;
           max-width: 274px;
@@ -21,24 +24,31 @@
 
           li.menu-item {
             position: relative;
-            padding: 15px 0;
             line-height: 16px;
+            padding: 0 25px;
             font-size: 14px;
             transition: all 0.3s ease-out;
 
-            &:not(:last-of-type) {
-              border-bottom: 1px solid @color-alto;
+            &:last-of-type {
+              .menu-item-wrapper {
+                border-bottom: none;
+              }
             }
 
-            & > a {
-              .text-scorpion;
+            .menu-item-wrapper {
+              padding: 15px 0;
+              border-bottom: 1px solid @color-alto;
 
-              font-family: 'Roboto Medium', Arial, sans-serif;
-              text-decoration: none;
+              & > a {
+                .text-scorpion;
 
-              i {
-                float: right;
-                font-size: 14px;
+                font-family: 'Roboto Medium', Arial, sans-serif;
+                text-decoration: none;
+
+                i {
+                  float: right;
+                  font-size: 14px;
+                }
               }
             }
 
