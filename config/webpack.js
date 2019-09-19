@@ -152,11 +152,6 @@ const webpackConfig = removeEmpty({
     ]),
     new HtmlWebpackPlugin({
       title: 'Loha',
-      filename: 'about.html',
-      template: `${APP_DIR}/templates/pages/about.swig`,
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Loha',
       filename: 'index.html',
       template: `${APP_DIR}/templates/pages/home.swig`,
     }),
