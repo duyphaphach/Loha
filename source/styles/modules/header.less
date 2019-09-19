@@ -1,0 +1,170 @@
+/**
+ * Modules - Layout #1's Header
+ ******************************
+ */
+
+.layout-base-1 {
+  #header {
+    &__section_1 {
+      .background-wild-sand;
+
+      &__address {
+        .background-cardinal;
+        .text-white;
+
+        padding-left: 130px;
+        display: inline-block;
+        width: 50%;
+        clip-path: polygon(-100px 0, 95% 0, 100% 100%, 0 100%);
+        line-height: 42px;
+      }
+
+      &__button {
+        float: right;
+        padding-right: 130px;
+        line-height: 42px;
+
+        &__login {
+          .text-scorpion;
+
+          > i {
+            padding-right: 13px;
+          }
+        }
+      }
+    }
+
+    &__section_2 {
+      background-color: white;
+      height: 120px;
+
+      &__row {
+        margin-top: 32px;
+
+        &__logo {
+          float: left;
+          margin-top: -11px;
+          width: 216px;
+          height: 67px;
+          text-indent: -9999px;
+          background-image: url('./../../assets/images/logo.png');
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: cover;
+        }
+
+        &__search {
+          .input-group;
+
+          display: inline-block;
+          line-height: 48px;
+          padding-left: 69px;
+
+          > .search-text {
+            .form-control;
+            
+            display: block;
+            width: 574px;
+            border: 1px solid @color-gallery;
+            height: 51px;
+            padding: 6px 12px;
+
+            &::placeholder {
+              .text-dusty-gray;
+
+              padding-left: 20px;
+            }
+          }
+
+          > .button {
+            .input-group-addon;
+            .background-cardinal;
+            .text-white;
+            .text-center;
+
+            padding: 0 20px;
+            line-height: 45px;
+            border: 2px solid @color-cardinal;
+            border-radius: 0;
+
+            &:hover {
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+        }
+
+        &__user_action {
+          .background-cardinal;
+          .text-white;
+
+          float: right;
+          width: 172px;
+          
+          i {
+            font-size: 20px;
+            display: inline-block;
+            line-height: 48px;
+            width: 48px;
+
+            &::before {
+              padding-left: 14px;
+              padding-right: 14px;
+            }
+          }
+
+          &__list {
+            float: right;
+            width: 123px;
+
+            > .item {
+              padding-left: 16px;
+            }
+
+            &__item_1 {
+              padding-top: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    &__section_3 {
+      .background-cardinal;
+      
+      &__list {
+        .item {
+          .text-white;
+
+          display: inline-block;
+          line-height: 48px;
+          padding-left: 30px;
+          padding-right: 30px;
+
+          &:hover {
+            .background-claret;
+
+            text-decoration: none;
+          }
+        }
+        
+
+        &__item_1 {
+          .background-claret;
+
+          width: 273px;
+          padding-left: 24px !important;
+          padding-right: 0 !important;
+
+          i {
+            padding-left: 61px;
+          }
+        }
+
+        &__item_2 {
+          padding-left: 30px !important;
+        }
+      }
+    }
+  }
+}
