@@ -35,10 +35,45 @@
     <div class="section-3" id="header__section_3">
       <div class="container">
         <div class="list" id="header__section_3__list">
-          <a href="#" class="item" id="header__section_3__list__item_1">
+          <div href="#" class="item" id="header__section_3__list__item_1">
             DANH MỤC SẢN PHẨM
             <i class="fa fa-bars"></i>
-          </a>
+            
+            <div class="sub-list">
+                <a href="#" class="sub-item">
+                  Linh kiện tự động hóa
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Linh kiện siết
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Thiết bị phun cát
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Thiết bị cắt
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Thiết bị tiêu hao
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Thiết bị thủy lực
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Dụng cụ dùng điện
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="sub-item">
+                  Tất cả sản phẩm
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+          </div>
           <a href="#" class="item" id="header__section_3__list__item_2">TRANG CHỦ</a>
           <a href="#" class="item" id="header__section_3__list__item_3">SẢN PHẨM</a>
           <a href="#" class="item" id="header__section_3__list__item_4">BÀI VIẾT</a>
