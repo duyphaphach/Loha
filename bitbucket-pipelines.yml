@@ -1,0 +1,70 @@
+image: node:8.6
+
+pipelines:
+  branches:
+    develop:
+      - parallel:
+#          - step:
+#              caches:
+#                - globalnode
+#                - node
+#                - node-modules
+#                - vendors
+#                - bower
+#              name: visual-regression-testing
+#              script:
+#                - npm install --global yarn
+#                - yarn global add bower cross-env
+#                - yarn install --ignore-engines
+#                - bower install --allow-root
+#                - ./node_modules/.bin/gulp scripts:vendors:compile
+#                - apt-get update
+#                - apt-get install -yyq ca-certificates
+#                - apt-get install -yyq libappindicator1 libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6
+#                - apt-get install -yyq gconf-service lsb-release wget xdg-utils
+#                - apt-get install -yyq fonts-liberation
+#                - yarn run test
+          - step:
+              caches:
+                - globalnode
+                - node
+                - node-modules
+                - vendors
+                - bower
+              name: linting
+              script:
+                - npm install --global yarn
+                - yarn install --ignore-engines
+                - yarn run lint:scripts
+                - yarn run lint:styles
+          - step:
+              caches:
+                - globalnode
+                - node
+                - node-modules
+                - vendors
+                - bower
+              name: surge-deployment
+              script:
+                - npm install --global yarn
+                - yarn global add bower cross-env
+                - yarn install --ignore-engines
+                - bower install --allow-root
+                - ./node_modules/.bin/gulp scripts:vendors:compile
+                - yarn global add surge
+                - yarn run build
+                - cd build
+                - surge ./ --domain extra-small-eyes.surge.sh
+                - pipe: atlassian/slack-notify:0.3.2
+                  variables:
+                    WEBHOOK_URL: $WEBHOOK_URL
+                    MESSAGE: 'Website demo: http://extra-small-eyes.surge.sh/'
+              artifacts:
+                - build/**
+
+definitions:
+  caches:
+    globalnode: /usr/local/lib/node_modules
+    node-modules: node_modules
+    vendors: source/vendors
+    bower: .bower
