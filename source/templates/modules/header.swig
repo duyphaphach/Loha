@@ -13,24 +13,22 @@
 
     <div class="section-2" id="header__section_2">
       <div class="container">
-        <div class="row" id="header__section_2__row">
-            <div class="logo" id="header__section_2__row__logo">
-              Kim khi
-            </div>
-            
-            <div class="search" id="header__section_2__row__search">
-              <input type="text" class="search-text" placeholder="Bạn muốn tìm gì?" aria-describedby="basic-addon2">
-              <a class="button" id="basic-addon2">TÌM KIẾM</a>
-            </div>
-              
-            <a href="#" class="user-action" id="header__section_2__row__user_action">
-                <i class="fa fa-shopping-cart">|</i>
-              <span class="list" id="header__section_2__row__user_action__list">
-                <span class="item" id="header__section_2__row__user_action__list__item_1">2 sản phẩm</span>
-                <span class="item" id="header__section_2__row__user_action__list__item_2">5.000.000 đ</span>
-              </span>
-            </a>
-        </div>
+        <a class="logo" id="header__section_2__logo">
+          Kim khi
+        </a>
+        
+        <form class="search-form" id="header__section_2__search_form">
+          <input type="text" class="search-input" placeholder="Bạn muốn tìm gì?" aria-describedby="basic-addon2">
+          <a class="button" id="basic-addon2" type="submit">TÌM KIẾM</a>
+        </form>
+          
+        <a href="#" class="cart" id="header__section_2__cart">
+          <i class="fa fa-shopping-cart">|</i>
+          <span class="list" id="header__section_2__cart__list">
+            <span class="item" id="header__section_2__cart__list__item_1">2 sản phẩm</span>
+            <span class="item" id="header__section_2__cart__list__item_2">5.000.000 đ</span>
+          </span>
+        </a>
       </div>
     </div>
 
