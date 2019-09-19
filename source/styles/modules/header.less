@@ -1,0 +1,237 @@
+/**
+ * Modules - Layout #1's Header
+ ******************************
+ */
+
+.layout-base-1 {
+  #header {
+    &__header_top {
+      .background-wild-sand;
+
+      &__address {
+        .background-cardinal;
+        .text-white;
+        .text-medium;
+
+        display: inline-block;
+        width: 50%;
+        line-height: 42px;
+        position: relative;
+
+        &::before {
+          content: '';
+          .background-cardinal;
+
+          position: absolute;
+          left: -1000px;
+          width: 1000px;
+          height: 100%;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 100%;
+          width: 41.6px;
+          height: 41.6px;
+          border: 21px solid @color-cardinal;
+          border-top-color: transparent;
+          border-right-color: transparent;
+        }
+      }
+
+      &__button {
+        float: right;
+        line-height: 42px;
+
+        &__login {
+          .text-scorpion;
+
+          > i {
+            padding-right: 13px;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &__header_bottom {
+      background-color: white;
+      min-height: 67px;
+      padding: 21px 0 32px;
+      
+      &__logo {
+        float: left;
+        margin-top: -11px;
+        width: 216px;
+        height: 67px;
+        text-indent: -9999px;
+        background-image: url('./../../assets/images/logo.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+      }
+
+      &__search_form {
+        .input-group;
+
+        display: inline-table;
+        padding-left: 89px;
+
+        > .search-input {
+          width: 430px;
+          border: 1px solid @color-gallery;
+          height: 51px;
+          padding: 0 12px;
+
+          &::placeholder {
+            .text-dusty-gray;
+            .font-awesome;
+            
+            padding-left: 2px;
+          }
+        }
+
+        > .button {
+          .background-cardinal;
+          .text-white;
+          .text-center;
+          .text-medium;
+
+          display: table-cell;
+          padding: 0 20px;
+          line-height: 48px;
+          border-radius: 0;
+
+          &:hover {
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__cart {
+        .background-cardinal;
+        .text-white;
+        .text-medium;
+
+        float: right;
+        width: 172px;
+        
+        i {
+          font-size: 20px;
+          display: inline-block;
+          line-height: 50px;
+          width: 48px;
+
+          &::before {
+            padding-left: 14px;
+            padding-right: 14px;
+          }
+        }
+
+        &__list {
+          float: right;
+          width: 123px;
+          padding: 6px 0 5px 16px;
+        }
+      }
+    }
+
+    &__navigation_bar {
+      .background-cardinal;
+      
+      &__list {
+        .item {
+          .text-white;
+          .text-medium;
+
+          display: inline-block;
+          line-height: 48px;
+          padding-left: 30px;
+          padding-right: 30px;
+
+          &:hover {
+            .background-claret;
+
+            text-decoration: none;
+          }
+        }
+        
+
+        &__item_1 {
+          .background-claret;
+
+          width: 273px;
+          padding-left: 24px !important;
+          padding-right: 0 !important;
+          position: relative;
+          display: inline-block;
+
+          i {
+            padding-left: 61px;
+          }
+          
+          .sub-list {
+            display: none;
+            position: absolute;
+            left: 0;
+            min-width: 273px;
+            z-index: 9998;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.19);
+
+            .sub-item {
+              .text-scorpion;
+              .text-medium;
+
+              padding: 0 16px;
+              text-decoration: none;
+              display: block;
+              width: 260px;
+              z-index: 9999;
+
+              &:last-child {
+                &::after {
+                  border-bottom: none;
+                }
+              }
+
+              &::after {
+                content: '';
+                display: block;
+                width: 225px;
+                height: 1px;
+                border-bottom: 1px solid @color-gallery;
+                margin: 0;
+              }
+
+              &:hover {
+                .background-white;
+              }
+
+              > i {
+                float: right;
+                margin: 15px 0;
+              }
+            }
+          }
+
+          &:hover .sub-list {
+            display: block;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &__item_2 {
+          padding-left: 30px !important;
+        }
+      }
+    }
+  }
+}
