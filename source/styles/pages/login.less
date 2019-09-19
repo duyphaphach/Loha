@@ -1,0 +1,168 @@
+/**
+* Layout Base #1 - Page login
+*****************************
+**/
+
+#main {
+  .breadcrumb {
+    .background-white;
+
+    margin-bottom: 0;
+    padding-top: 34px;
+    padding-left: 0;
+
+    > li {
+      & + li {
+        .text-cardinal;
+
+        &::before {
+          content: '\003e';
+        }
+      }
+
+      > a,
+      a:hover {
+        .text-dusty-gray;
+
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__row {
+    padding: 72px 0;
+
+    .column {
+      .make-md-column(6);
+
+      .link {
+        .text-cardinal;
+
+        text-decoration: none;
+      }
+
+      .form {
+        > .email,
+        .password {
+          > input {
+            width: 323px;
+            padding: 10px 16px;
+            border: 1px solid @color-mercury;
+          }
+        }
+
+        .error-message {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &__column_1 {
+      .text-center;
+
+      padding-top: 48px;
+      
+      &__title {
+        font-size: 32px;
+      }
+
+      &__text {
+        padding-top: 11px;
+      }
+    }
+
+    &__column_2 {
+      &__form {
+        &__actions {
+          display: block;
+          position: relative;
+          width: 323px;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          &__link {
+            float: right;
+          }
+
+          &__checkbox {
+            opacity: 0;
+            position: absolute;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+
+          &__label {
+            .background-wild-sand;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid @color-cardinal;
+
+            &::after {
+              content: "";
+              position: absolute;
+              display: block;
+              width: 16px;
+              height: 16px;
+            }
+          }
+
+          &:hover .checkbox:checked ~ label {
+            .background-cardinal;
+          }
+
+          & .checkbox:checked ~ label::after {
+            display: block;
+          }
+
+          & .checkbox:checked ~ label {
+            .background-cardinal;
+          }
+
+          & label::after {
+            left: 5px;
+            top: 1px;
+            width: 5px;
+            height: 10px;
+            border: solid @color-white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+
+        &__password {
+          position: relative;
+          max-width: 323px;
+        }
+
+        &__toggle_password {
+          position: absolute;
+          top: 14px;
+          right: 16px;
+        }
+
+        &__submit {
+          .background-cardinal;
+          .text-white;
+
+          display: inline-block;
+          padding: 0 22px;
+          margin-top: 23px;
+          text-decoration: none;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+}
