@@ -1,6 +1,6 @@
 module.exports = function (core, instanceId, options/* , moduleId */) {
   // define your API
-  this.namespace = 'lb';
+  this.namespace = 'lh';
 
   // e.g. provide the Mediator methods 'on', 'emit', etc.
   core._mediator.installTo(this);
