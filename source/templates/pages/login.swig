@@ -5,11 +5,6 @@
 {% block main %}
 <div id='main'>
   <div class="container">
-    <ol class="breadcrumb">
-      <li><a href="#">Trang chủ</a></li>
-      <li class="active">Tài khoản</li>
-    </ol>
-  
     <div class="row" id="main__row">
       <div class="column" id="main__row__column_1">
         <p class="title" id="main__row__column_1__title">ĐĂNG NHẬP</p>
