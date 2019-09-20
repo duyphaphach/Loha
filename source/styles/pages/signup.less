@@ -23,6 +23,10 @@
               padding: 10px 16px;
               border: 1px solid @color-mercury;
               border-radius: 2px;
+
+              &::placeholder {
+                .text-dusty-gray;
+              }
             }
           }
   
@@ -69,6 +73,10 @@
               &:first-child {
                 margin-right: 25px;
               }
+
+              &::placeholder {
+                .text-dusty-gray;
+              }
             }
           }
 
@@ -81,6 +89,10 @@
             position: absolute;
             top: 14px;
             right: 16px;
+
+            &::before {
+              .text-dusty-gray;
+            }
           }
   
           &__submit {
