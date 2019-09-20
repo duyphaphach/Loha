@@ -11,7 +11,6 @@
 </head>
 <body class="layout-base-1 {% block bodyClass %}{% endblock %}">
 {% include '../modules/header.swig' %}
-{% include '../modules/breadcrumb.swig' %}
 {% block main %}{% endblock %}
 {% include '../modules/footer.swig' %}
 </body>

@@ -1,4 +1,4 @@
-{% extends '../layouts/base-1.swig' %}
+{% extends '../layouts/base-2.swig' %}
 
 {% block bodyClass %}page-login{% endblock %}
 
