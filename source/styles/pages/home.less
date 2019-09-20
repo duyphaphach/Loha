@@ -6,7 +6,6 @@
 .page-home {
   #section_1 {
     padding-top: 30px;
-    padding-bottom: 30px;
 
     .container {
       .container-fixed();
@@ -83,7 +82,7 @@
 
                   margin-bottom: 15px;
                   font-family: 'Roboto Medium', Arial, sans-serif;
-                  font-weight: 550;
+                  font-weight: 500;
                   font-size: 16px;
                   line-height: 19px;
                   text-transform: uppercase;
@@ -188,6 +187,260 @@
 
               border-color: @color-dust-gray;
             }
+          }
+        }
+      }
+    }
+  }
+
+  #section_2 {
+    padding-top: 30px;
+    padding-bottom: 35px;
+
+    .title {
+      margin-bottom: 38px;
+      font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .list {
+      .make-row();
+
+      .wrapper {
+        position: relative;
+        padding: 22px 24px 24px 24px;
+        border-radius: 4px;
+        transition: all 0.3s ease-out;
+      }
+
+      .item {
+        .make-md-column(3);
+
+        .pricing-table {
+          .background-scorpion;
+          .text-white;
+
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          left: 12px;
+          transition: all 0.3s ease-out;
+          display: block;
+          opacity: 0.9;
+          border-radius: 4px;
+          overflow: hidden;
+          height: 0;
+          z-index: 1;
+
+          table {
+            width: 100%;
+
+            tr {
+              th {
+                font-family: 'Roboto Medium', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 15px;
+                box-shadow: inset 0 -1px 0 rgba(221, 221, 221, 0.5), inset 0 1px 0 rgba(221, 221, 221, 0.5);
+
+                &:first-child {
+                }
+              }
+
+              td {
+                font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                padding: 10px 15px;
+                box-shadow: inset 0 -1px 0 rgba(221, 221, 221, 0.5), inset 0 1px 0 rgba(221, 221, 221, 0.5);
+              }
+
+              text-decoration: none;
+            }
+          }
+        }
+
+        .title {
+          .text-blackcurrant;
+
+          margin-top: 30px;
+          margin-bottom: 5px;
+          font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 16px;
+          text-decoration: none;
+          transition: all 0.2s ease-out;
+
+          &:hover {
+            .text-cardinal;
+          }
+        }
+
+        .price {
+          .text-cardinal;
+
+          font-family: 'Roboto Medium', Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+
+        .pre-discount {
+          .text-dusty-gray;
+
+          visibility: hidden;
+          margin-top: 8px;
+          margin-bottom: 20px;
+          text-decoration: line-through;
+          font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        .provider {
+          .text-cardinal;
+
+          margin-bottom: 8px;
+          font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        .action {
+          display: inline-block;
+          visibility: hidden;
+          width: 100%;
+        }
+
+        .checkout {
+          .background-cardinal;
+          .text-white;
+
+          font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+          display: inline-block;
+          float: left;
+          padding: 9px 40px;
+          font-size: 12px;
+          text-transform: uppercase;
+          line-height: 14px;
+          border-radius: 4px;
+
+          &:hover {
+            .background-claret;
+
+            text-decoration: none;
+          }
+        }
+
+        .add-to-cart {
+          .background-river-bed;
+
+          display: inline-block;
+          float: right;
+          border-radius: 4px;
+          width: 32px;
+          height: 32px;
+          text-align: center;
+
+          img {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+          }
+
+          .align {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+          }
+        }
+
+        .thumbnail {
+          position: relative;
+          margin-bottom: 50px;
+          border: 0;
+
+          .tag {
+            .background-cardinal;
+            .text-white;
+
+            position: absolute;
+            display: inline-block;
+            text-transform: uppercase;
+            font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 4px 13px 2px;
+            border-radius: 3px;
+
+            &:hover {
+              .background-claret;
+            }
+          }
+        }
+
+        &:hover {
+          .pricing-table {
+            height: 205px;
+            box-shadow: 2px 4px 11px 2px #80808078;
+          }
+
+          .wrapper {
+            box-shadow: 2px 4px 11px 2px #80808036;
+          }
+
+          .action {
+            visibility: visible;
+          }
+
+          .pre-discount {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  
+  #section_3 {
+    padding-bottom: 35px;
+
+    .list {
+      .make-row();
+
+      .item {
+        .make-md-column(3);
+
+        .wrapper {
+          border: 1px solid @color-alto;
+          height: 80px;
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+          border-radius: 2px;
+
+          .helper {
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .text {
+            margin-left: 15px;
+            font-family: 'Roboto Medium', Arial, Helvetica Neue, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 14px;
+            text-transform: uppercase;
+          }
+
+          .img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 48px;
+            height: auto;
           }
         }
       }
