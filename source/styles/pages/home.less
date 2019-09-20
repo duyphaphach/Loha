@@ -26,7 +26,7 @@
             line-height: 16px;
             padding: 0 25px;
             font-size: 14px;
-            transition: all 0.3s ease-out;
+            transition: all 0.2s ease-out;
 
             &:last-of-type {
               .menu-item-wrapper {
@@ -178,7 +178,7 @@
             border: 1px solid @color-alto;
             outline: none;
             border-radius: 2px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
 
             &:hover,
             &:focus {
@@ -210,9 +210,9 @@
 
       .wrapper {
         position: relative;
-        padding: 22px 24px 24px 24px;
+        padding: 22px 24px 20px 24px;
         border-radius: 4px;
-        transition: all 0.3s ease-out;
+        transition: all 0.2s ease-out;
       }
 
       .item {
@@ -226,7 +226,7 @@
           top: 12px;
           right: 12px;
           left: 12px;
-          transition: all 0.3s ease-out;
+          transition: all 0.2s ease-out;
           display: block;
           opacity: 0.9;
           border-radius: 4px;
@@ -263,7 +263,7 @@
         .title {
           .text-blackcurrant;
 
-          margin-top: 30px;
+          display: block;
           margin-bottom: 5px;
           font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 14px;
@@ -401,7 +401,7 @@
       }
     }
   }
-  
+
   #section_3 {
     padding-bottom: 35px;
 
@@ -442,6 +442,54 @@
             width: 48px;
             height: auto;
           }
+        }
+      }
+    }
+  }
+
+  #section_4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__sidebar {
+      .make-md-column(3);
+    }
+
+    &__content {
+      .make-md-column(9);
+
+      &__group_1 {
+        padding-bottom: 30px;
+
+        button {
+          .text-scorpion;
+          .background-white;
+
+          border: 1px solid @color-alto;
+          font-size: 14px;
+          line-height: 16px;
+          padding: 12px 16px;
+          height: 42px;
+          border-radius: 2px;
+          text-transform: capitalize;
+          transition: all 0.2s ease-out;
+
+          &:hover,
+          &:focus {
+            .text-cardinal;
+
+            border-color: @color-cardinal;
+          }
+        }
+      }
+
+      &__group_3 {
+        max-height: 170px;
+        overflow-y: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
