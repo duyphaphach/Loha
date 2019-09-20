@@ -1,0 +1,27 @@
+#breadcrumb {
+  .breadcrumb {
+    .background-white;
+
+    margin-bottom: 0;
+    padding-top: 34px;
+    padding-left: 0;
+
+    > li {
+      & + li {
+        .text-cardinal;
+
+        &::before {
+          content: '\f105';
+          .font-awesome;
+        }
+      }
+
+      > a,
+      a:hover {
+        .text-dusty-gray;
+
+        text-decoration: none;
+      }
+    }
+  }
+}
