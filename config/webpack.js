@@ -155,6 +155,11 @@ const webpackConfig = removeEmpty({
       filename: 'index.html',
       template: `${APP_DIR}/templates/pages/home.swig`,
     }),
+    new HtmlWebpackPlugin({
+      title: 'Loha',
+      filename: 'forgot-password-1.html',
+      template: `${APP_DIR}/templates/pages/forgot-password-1.swig`,
+    }),
     new HtmlWebpackTagsPlugin({
       tags: [
         'vendors.js',
