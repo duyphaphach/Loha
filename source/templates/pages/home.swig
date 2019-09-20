@@ -380,7 +380,7 @@
         <div class='item'>
           <div class="wrapper">
             <img src='./../../assets/images/pages/home/section-3.list.icon-1.png' alt=''>
-            <div class='text'>MIỄN PHÍ VẬN CHUYỂN </div>
+            <div class='text'>MIỄN PHÍ VẬN CHUYỂN</div>
             <span class='helper'></span>
           </div>
         </div>
@@ -404,6 +404,18 @@
             <div class='text'>Ưu đãi khi đặt số lượng lớn</div>
             <span class='helper'></span>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section_4">
+    <div class='container'>
+      <div class='row'>
+        <div id="section_4__sidebar">
+          {% include '../modules/featured-products.swig' %}
+        </div>
+        <div id="section_4__content">
+          Content
         </div>
       </div>
     </div>
