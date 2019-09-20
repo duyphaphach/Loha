@@ -1,0 +1,204 @@
+/**
+ * Modules - Product List
+ ************************
+ */
+
+.product-list {
+  .make-row();
+
+  padding-bottom: 30px;
+
+  .wrapper {
+    position: relative;
+    padding: 22px 24px 20px 24px;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+
+  .item {
+    .make-md-column(4);
+
+    .pricing-table {
+      .background-scorpion;
+      .text-white;
+
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      left: 12px;
+      transition: all 0.2s ease-out;
+      display: block;
+      opacity: 0.9;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 0;
+      z-index: 1;
+
+      table {
+        width: 100%;
+
+        tr {
+          th {
+            font-family: 'Roboto Medium', Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 15px;
+            box-shadow: inset 0 -1px 0 rgba(221, 221, 221, 0.5), inset 0 1px 0 rgba(221, 221, 221, 0.5);
+
+            &:first-child {
+            }
+          }
+
+          td {
+            font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 10px 15px;
+            box-shadow: inset 0 -1px 0 rgba(221, 221, 221, 0.5), inset 0 1px 0 rgba(221, 221, 221, 0.5);
+          }
+
+          text-decoration: none;
+        }
+      }
+    }
+
+    .title {
+      .text-blackcurrant;
+
+      display: block;
+      margin-bottom: 5px;
+      font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        .text-cardinal;
+      }
+    }
+
+    .price {
+      .text-cardinal;
+
+      font-family: 'Roboto Medium', Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .pre-discount {
+      .text-dusty-gray;
+
+      opacity: 0;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      text-decoration: line-through;
+      font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      transition: opacity 0.2s ease-out;
+    }
+
+    .provider {
+      .text-cardinal;
+
+      margin-bottom: 8px;
+      font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .action {
+      display: inline-block;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+    }
+
+    .checkout {
+      .background-cardinal;
+      .text-white;
+
+      font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+      display: inline-block;
+      float: left;
+      padding: 9px 40px;
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 14px;
+      border-radius: 4px;
+
+      &:hover {
+        .background-claret;
+
+        text-decoration: none;
+      }
+    }
+
+    .add-to-cart {
+      .background-river-bed;
+
+      display: inline-block;
+      float: right;
+      border-radius: 4px;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+      }
+
+      .align {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+    }
+
+    .thumbnail {
+      position: relative;
+      margin-bottom: 50px;
+      border: 0;
+
+      .tag {
+        .background-cardinal;
+        .text-white;
+
+        position: absolute;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 4px 13px 2px;
+        border-radius: 3px;
+
+        &:hover {
+          .background-claret;
+        }
+      }
+    }
+
+    &:hover {
+      .pricing-table {
+        height: 205px;
+        box-shadow: 2px 4px 11px 2px #80808078;
+      }
+
+      .wrapper {
+        box-shadow: 2px 4px 11px 2px #80808036;
+      }
+
+      .action {
+        opacity: 1;
+      }
+
+      .pre-discount {
+        opacity: 1;
+      }
+    }
+  }
+}

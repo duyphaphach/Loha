@@ -1,0 +1,83 @@
+/**
+ * Modules - Featured Products
+ *****************************
+ */
+
+.featured-products {
+  width: 100%;
+
+  .header {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border: 1px solid @color-alto;
+
+    .title {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      font-family: 'Roboto Medium', Roboto Medium, Arial, Helvetica Neue, Helvetica, sans-serif;
+    }
+
+    .action {
+      button {
+        .background-white;
+        .text-dusty-gray;
+
+        display: inline-block;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        border-radius: 2px;
+        border: 1px solid @color-alto;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          .background-scorpion;
+          .text-white;
+
+          border-color: @color-scorpion;
+        }
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    padding: 25px 15px;
+    align-items: center;
+    border: 1px solid @color-alto;
+    border-top: 0;
+
+    img {
+      width: auto;
+      height: 78px;
+    }
+
+    .meta {
+      .name,
+      .provider {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: 'Roboto Regular', Arial, Helvetica Neue, Helvetica, sans-serif;
+
+        &:hover {
+          .text-cardinal;
+
+          cursor: pointer;
+        }
+      }
+
+      .name {
+        margin-bottom: 15px;
+      }
+
+      .provider {
+        .text-cardinal;
+      }
+    }
+  }
+}
