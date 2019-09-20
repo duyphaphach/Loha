@@ -1,6 +1,30 @@
 <div class="product-list">
   <div class='item'>
     <div class='wrapper'>
+      <div class='pricing-table'>
+        <table>
+          <tr>
+            <th>Số lượng</th>
+            <th>Giá mỗi sản phẩm</th>
+          </tr>
+          <tr>
+            <td>1-10</td>
+            <td>15.500.000đ</td>
+          </tr>
+          <tr>
+            <td>10-15</td>
+            <td>15.000.000đ</td>
+          </tr>
+          <tr>
+            <td>15-25</td>
+            <td>14.500.000đ</td>
+          </tr>
+          <tr>
+            <td>>25</td>
+            <td>13.500.000đ</td>
+          </tr>
+        </table>
+      </div>
       <div class='thumbnail'>
         <div class='tag'>Mới</div>
         <img src='./../../assets/images/pages/home/section-2.list.thumnail-1.png' alt=''>
@@ -17,6 +41,30 @@
   </div>
   <div class='item'>
     <div class='wrapper'>
+      <div class='pricing-table'>
+        <table>
+          <tr>
+            <th>Số lượng</th>
+            <th>Giá mỗi sản phẩm</th>
+          </tr>
+          <tr>
+            <td>1-10</td>
+            <td>15.500.000đ</td>
+          </tr>
+          <tr>
+            <td>10-15</td>
+            <td>15.000.000đ</td>
+          </tr>
+          <tr>
+            <td>15-25</td>
+            <td>14.500.000đ</td>
+          </tr>
+          <tr>
+            <td>>25</td>
+            <td>13.500.000đ</td>
+          </tr>
+        </table>
+      </div>
       <div class='thumbnail'>
         <div class='tag'>Mới</div>
         <img src='./../../assets/images/pages/home/section-2.list.thumnail-2.png' alt=''>
@@ -33,6 +81,30 @@
   </div>
   <div class='item'>
     <div class='wrapper'>
+      <div class='pricing-table'>
+        <table>
+          <tr>
+            <th>Số lượng</th>
+            <th>Giá mỗi sản phẩm</th>
+          </tr>
+          <tr>
+            <td>1-10</td>
+            <td>15.500.000đ</td>
+          </tr>
+          <tr>
+            <td>10-15</td>
+            <td>15.000.000đ</td>
+          </tr>
+          <tr>
+            <td>15-25</td>
+            <td>14.500.000đ</td>
+          </tr>
+          <tr>
+            <td>>25</td>
+            <td>13.500.000đ</td>
+          </tr>
+        </table>
+      </div>
       <div class='thumbnail'>
         <div class='tag'>Mới</div>
         <img src='./../../assets/images/pages/home/section-2.list.thumnail-3.png' alt=''>
