@@ -11,8 +11,6 @@
       .make-md-column(6);
 
       .link {
-        .text-cardinal;
-
         text-decoration: none;
       }
 
@@ -23,6 +21,7 @@
             width: 323px;
             padding: 10px 16px;
             border: 1px solid @color-mercury;
+            border-radius: 2px;
           }
         }
 
@@ -43,33 +42,43 @@
 
       &__text {
         padding-top: 11px;
+
+        &__link {
+          .text-cardinal;
+
+          padding-left: 13px;
+        }
       }
     }
 
     &__column_2 {
       &__form {
         &__actions {
+          .text-scorpion;
+
           display: block;
           position: relative;
           width: 323px;
           padding-left: 35px;
           margin-bottom: 12px;
-          cursor: pointer;
           -webkit-user-select: none;
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
+          cursor: pointer;
 
           &__link {
+            .text-scorpion;
+
             float: right;
           }
 
           &__checkbox {
             opacity: 0;
             position: absolute;
-            cursor: pointer;
             height: 0;
             width: 0;
+            cursor: pointer;
           }
 
           &__label {
@@ -81,6 +90,7 @@
             width: 16px;
             height: 16px;
             border: 1px solid @color-cardinal;
+            border-radius: 2px;
 
             &::after {
               content: "";
@@ -136,6 +146,7 @@
           margin-top: 23px;
           text-decoration: none;
           line-height: 34px;
+          border-radius: 2px;
         }
       }
     }
