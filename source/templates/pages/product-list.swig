@@ -8,6 +8,15 @@
     <div id="main__banner" class="banner">
       <img class="banner-image" src='../../assets/images/pages/product-list/banner.png' alt="" class="src">
     </div>
+    <div id="breadcrumb">
+      <div class="container">
+        <ul class="list">
+          <li class="item"><a href="#">Trang chủ</a></li>
+          <li class="item"><a href="#">Sản phẩm</a></li>
+          <li class="item active">Lọc sản phẩm</li>
+        </ul>
+      </div>
+    </div>
     <div class="row" id="main__row">
       <div class="sidebar-menu" id="main__row__sidebar_menu">
         <div class="filter-panel" id="main__row__sidebar_menu__filter_panel_1">
