@@ -26,7 +26,7 @@
             line-height: 16px;
             padding: 0 25px;
             font-size: 14px;
-            transition: all 0.3s ease-out;
+            transition: all 0.2s ease-out;
 
             &:last-of-type {
               .menu-item-wrapper {
@@ -178,7 +178,7 @@
             border: 1px solid @color-alto;
             outline: none;
             border-radius: 2px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
 
             &:hover,
             &:focus {
@@ -197,12 +197,43 @@
     padding-top: 30px;
     padding-bottom: 35px;
 
-    .title {
+    .header {
+      display: flex;
+      height: 35px;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 38px;
-      font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28px;
+
+      .title {
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        font-family: 'Roboto Medium', Roboto Medium, Arial, Helvetica Neue, Helvetica, sans-serif;
+      }
+
+      .action {
+        button {
+          .background-white;
+          .text-dusty-gray;
+
+          display: inline-block;
+          text-align: center;
+          width: 32px;
+          height: 32px;
+          font-size: 18px;
+          border-radius: 2px;
+          border: 1px solid @color-alto;
+          outline: none;
+          transition: all 0.3s ease-out;
+
+          &:hover {
+            .background-scorpion;
+            .text-white;
+
+            border-color: @color-scorpion;
+          }
+        }
+      }
     }
 
     .list {
@@ -210,9 +241,9 @@
 
       .wrapper {
         position: relative;
-        padding: 22px 24px 24px 24px;
+        padding: 22px 24px 20px 24px;
         border-radius: 4px;
-        transition: all 0.3s ease-out;
+        transition: all 0.2s ease-out;
       }
 
       .item {
@@ -226,7 +257,7 @@
           top: 12px;
           right: 12px;
           left: 12px;
-          transition: all 0.3s ease-out;
+          transition: all 0.2s ease-out;
           display: block;
           opacity: 0.9;
           border-radius: 4px;
@@ -263,7 +294,7 @@
         .title {
           .text-blackcurrant;
 
-          margin-top: 30px;
+          display: block;
           margin-bottom: 5px;
           font-family: 'Roboto Regular', Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 14px;
@@ -401,7 +432,7 @@
       }
     }
   }
-  
+
   #section_3 {
     padding-bottom: 35px;
 
@@ -441,6 +472,158 @@
             vertical-align: middle;
             width: 48px;
             height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #section_4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__sidebar {
+      .make-md-column(3);
+    }
+
+    &__content {
+      .make-md-column(9);
+
+      &__group_1 {
+        padding-bottom: 30px;
+
+        button {
+          .text-scorpion;
+          .background-white;
+
+          border: 1px solid @color-alto;
+          font-size: 14px;
+          line-height: 16px;
+          padding: 12px 16px;
+          height: 42px;
+          border-radius: 2px;
+          text-transform: capitalize;
+          transition: all 0.2s ease-out;
+
+          &:hover,
+          &:focus {
+            .text-cardinal;
+
+            border-color: @color-cardinal;
+          }
+        }
+      }
+
+      &__group_3 {
+        max-height: 170px;
+        overflow-y: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  #section_5,
+  #section_6,
+  #section_7 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__sidebar {
+      .make-md-column(3);
+
+      position: relative;
+
+      .image {
+        background: #2d5489;
+        opacity: 0.95;
+        width: 100%;
+        height: 450px;
+        max-height: 450px;
+        overflow-y: hidden;
+      }
+
+      .title {
+        .font-roboto;
+        .text-white;
+
+        position: absolute;
+        top: 35px;
+        left: 42px;
+        right: 42px;
+        text-align: left;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: capitalize;
+        z-index: 1;
+      }
+
+      .view-more {
+        .font-roboto;
+        .text-white;
+
+        position: absolute;
+        bottom: 24px;
+        left: 42px;
+        right: 42px;
+        text-decoration: none;
+        padding: 12px 54px;
+        height: 42px;
+        text-align: center;
+        font-size: 17px;
+        line-height: 16px;
+        border: 1.2px solid @color-white;
+        text-transform: capitalize;
+        border-radius: 2px;
+
+        &:hover {
+          box-shadow: 0 0 0 1px @color-white;
+          background: rgba(255, 255, 255, 0.07);
+        }
+      }
+    }
+
+    &__content {
+      .make-md-column(9);
+
+      .header {
+        display: flex;
+        height: 35px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .title {
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: uppercase;
+          font-family: 'Roboto Medium', Roboto Medium, Arial, Helvetica Neue, Helvetica, sans-serif;
+        }
+
+        .action {
+          button {
+            .background-white;
+            .text-dusty-gray;
+
+            display: inline-block;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+            font-size: 18px;
+            border-radius: 2px;
+            border: 1px solid @color-alto;
+            transition: all 0.3s ease-out;
+            outline: none;
+
+            &:hover {
+              .background-scorpion;
+              .text-white;
+
+              border-color: @color-scorpion;
+            }
           }
         }
       }

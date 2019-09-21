@@ -11,7 +11,8 @@
     "lint:scripts": "./node_modules/.bin/eslint .",
     "lint:styles": "./node_modules/.bin/stylelint .",
     "test": "cross-env JEST_PUPPETEER_CONFIG=./config/jest-puppeteer.js jest --config ./config/jest.js",
-    "lint:commit": "concurrently --kill-others-on-fail -c \"bgBlue.bold,bgMagenta.bold\" \"yarn:lint:scripts\" \"yarn:lint:styles\""
+    "lint:commit": "concurrently --kill-others-on-fail -c \"bgBlue.bold,bgMagenta.bold\" \"yarn:lint:scripts\" \"yarn:lint:styles\"",
+    "lint:commit:fix": "concurrently --kill-others-on-fail -c \"bgBlue.bold,bgMagenta.bold\" \"yarn:lint:scripts --fix\" \"yarn:lint:styles --fix\""
   },
   "dependencies": {
     "add-asset-html-webpack-plugin": "^2.1.3",
