@@ -129,6 +129,9 @@
                 </ul>
               </div>
             </div>
+            {% for i in [0,1,2,3] %}
+            {% include '../modules/product-list.swig' %}
+            {% endfor %}
           </div>
         </div>
       </div>
