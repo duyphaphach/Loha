@@ -110,7 +110,7 @@
 
     
           <div class="content" id="main__section_1__row__content">
-            <div class="option-box">
+            <div class="section-1">
               <span class="filter-result">
                   Hiển thị: 1 - 9 trong tổng số 140 sản phẩm
               </span>
@@ -129,9 +129,14 @@
                 </ul>
               </div>
             </div>
-            {% for i in [0,1,2,3] %}
-            {% include '../modules/product-list.swig' %}
-            {% endfor %}
+            <div class="section-2">
+              {% for i in [0,1,2,3] %}
+              {% include '../modules/product-list.swig' %}
+              {% endfor %}
+            </div>
+            <div class="section-3">
+              {% include '../modules/pagination.swig' %}
+            </div>
           </div>
         </div>
       </div>
