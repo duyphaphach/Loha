@@ -1,0 +1,93 @@
+/**
+* Layout Base #2 - Page Product List #1
+***************************************
+**/
+
+.page-product-list {
+  #main {
+    &__banner {
+      padding-top: 30px;
+
+      > .banner-image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__row {
+      #filter_panel {
+        .make-md-column(3);
+      }
+
+      &__content {
+        .make-md-column(9);
+      
+        .section-1 {
+          line-height: 64px;
+          border: 1px solid @color-gallery;
+          border-radius: 2px;
+          padding: 0 16px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+      
+          .filter-result {
+            .text-black;
+          }
+      
+          .sort-box {
+            .dropdown;
+      
+            > .button {
+              .text-river-bed;
+      
+              display: inline-block;
+              line-height: 29px;
+              padding: 0 16px;
+              border: 1px solid @color-gallery;
+              box-sizing: border-box;
+              border-radius: 2px;
+              margin-left: 16px;
+      
+              > .caret {
+                margin-left: 42px;
+              }
+      
+              &:hover {
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+      
+            > .menu {
+              min-width: 248px;
+              box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.19);
+              border-radius: 2px;
+      
+              > li {
+                > a {
+                  .text-river-bed;
+      
+                  padding-left: 24px;
+                  line-height: 29px;
+      
+                  &:hover {
+                    .background-cardinal;
+                    .text-white;
+      
+                    border-radius: 2px;
+                  }
+                }
+              }
+            }
+      
+            &::before {
+              content: 'Sắp xếp:';
+              .text-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

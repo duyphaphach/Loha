@@ -1,26 +1,42 @@
 #breadcrumb {
-  .breadcrumb {
+  .list {
     .background-white;
 
-    margin-bottom: 0;
-    padding-top: 34px;
+    line-height: 60px;
     padding-left: 0;
+    margin-left: -15px;
+    margin-bottom: 0;
 
-    > li {
-      & + li {
+    > .item {
+      display: inline;
+      padding-right: 16px;
+
+      & + .item {
         .text-cardinal;
 
         &::before {
           content: '\f105';
           .font-awesome;
+          .text-dusty-gray;
+
+          padding-right: 16px;
         }
       }
 
-      > a,
-      a:hover {
+      > a {
         .text-dusty-gray;
 
         text-decoration: none;
+      }
+      
+      > a:hover {
+        .text-cardinal;
+
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
       }
     }
   }

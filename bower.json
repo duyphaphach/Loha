@@ -22,7 +22,8 @@
     "jquery": "^3.3.1",
     "font-awesome": "4",
     "scaleapp": "^0.4.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "ion.rangeSlider": "https://github.com/IonDen/ion.rangeSlider.git#^2.3.0"
   },
   "overrides": {}
 }
