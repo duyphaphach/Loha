@@ -15,154 +15,13 @@
     }
 
     &__row {
-      &__sidebar_menu {
+      #filter_panel {
         .make-md-column(3);
-
-        > .filter-panel {
-          border: 1px solid @color-gallery;
-          width: 273px;
-          padding-left: 24px;
-          margin-bottom: 32px;
-
-          > .title {
-            .font-roboto;
-
-            position: relative;
-            font-weight: bold;
-            width: 225px;
-            line-height: 64px;
-
-            > i {
-              position: absolute;
-              right: 0;
-              top: 24px;
-            }
-
-            &::after {
-              content: '';
-              position: absolute;
-              display: block;
-              width: 225px;
-              height: 1px;
-              left: 0;
-              border-bottom: 1px solid @color-gallery;
-            }
-          }
-
-          > .meta {
-            .text-scorpion;
-
-            display: block;
-            position: relative;
-            padding-left: 35px;
-            line-height: 45px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            cursor: pointer;
-
-            > .checkbox {
-              opacity: 0;
-              position: absolute;
-              height: 0;
-              width: 0;
-              cursor: pointer;
-            }
-
-            > label {
-              position: absolute;
-              top: 14px;
-              left: 0;
-              width: 16px;
-              height: 16px;
-              border: 1px solid @color-alto;
-              border-radius: 2px;
-
-              &::after {
-                content: "";
-                position: absolute;
-                display: block;
-                width: 16px;
-                height: 16px;
-              }
-            }
-  
-            & .checkbox:checked ~ label::after {
-              display: block;
-            }
-
-            & .checkbox:checked ~ label {
-              .background-cardinal;
-
-              border-radius: 2px;
-            }
-  
-            & label::after {
-              left: 5px;
-              top: 1px;
-              width: 5px;
-              height: 10px;
-              border: solid @color-white;
-              border-width: 0 3px 3px 0;
-              -webkit-transform: rotate(45deg);
-              -ms-transform: rotate(45deg);
-              transform: rotate(45deg);
-            }
-
-            &:hover {
-              text-decoration: none;
-            }
-
-            &:last-child {
-              &::after {
-                border-bottom: none;
-              }
-            }
-
-            &::after {
-              content: '';
-              position: absolute;
-              display: block;
-              width: 225px;
-              height: 1px;
-              left: 0;
-              border-bottom: 1px solid @color-gallery;
-            }
-          }
-        }
-
-        &__filter_panel_3 {
-          .text {
-            padding-top: 28px;
-            margin: 0;
-          }
-
-          .price {
-            line-height: 34px;
-          }
-
-          .button {
-            .background-cardinal;
-            .text-white;
-
-            display: inline-block;
-            line-height: 31px;
-            padding: 0 16px;
-            border-radius: 4px;
-            margin-bottom: 24px;
-
-            &:hover {
-              text-decoration: none;
-              cursor: pointer;
-            }
-          }
-        }
       }
 
       &__content {
         .make-md-column(9);
-
+      
         .section-1 {
           line-height: 64px;
           border: 1px solid @color-gallery;
@@ -171,17 +30,17 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 30px;
-
+      
           .filter-result {
             .text-black;
           }
-
+      
           .sort-box {
             .dropdown;
-
+      
             > .button {
               .text-river-bed;
-
+      
               display: inline-block;
               line-height: 29px;
               padding: 0 16px;
@@ -189,39 +48,39 @@
               box-sizing: border-box;
               border-radius: 2px;
               margin-left: 16px;
-
+      
               > .caret {
                 margin-left: 42px;
               }
-
+      
               &:hover {
                 text-decoration: none;
                 cursor: pointer;
               }
             }
-
+      
             > .menu {
               min-width: 248px;
               box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.19);
               border-radius: 2px;
-
+      
               > li {
                 > a {
                   .text-river-bed;
-
+      
                   padding-left: 24px;
                   line-height: 29px;
-
+      
                   &:hover {
                     .background-cardinal;
                     .text-white;
-
+      
                     border-radius: 2px;
                   }
                 }
               }
             }
-
+      
             &::before {
               content: 'Sắp xếp:';
               .text-black;
