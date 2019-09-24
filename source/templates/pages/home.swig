@@ -435,6 +435,7 @@
         </div>
       </div>
     </div>
+
   </div>
 
   <div class='section' id='section_5'>
@@ -519,5 +520,6 @@
       </div>
     </div>
   </div>
+  {% include '../modules/partner-slider.swig' %}
 </div>
 {% endblock %}

@@ -1,0 +1,41 @@
+.partner-slider {
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  .wrapper {
+    .make-md-column(12);
+  }
+
+  .title {
+    .font-roboto-medium;
+
+    margin-bottom: 38px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .slider {
+    .slick-slide {
+      min-height: 160px;
+      display: flex;
+      align-items: center;
+      filter: grayscale(1);
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+
+      & > div {
+        margin: 0 25px;
+        display: inline-block;
+      }
+    }
+
+    .helper {
+      height: 100%;
+      display: inline-block;
+    }
+  }
+}
