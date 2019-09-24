@@ -1,0 +1,57 @@
+/**
+ * Modules - Pagination
+ **********************
+ */
+
+#pagination {
+  margin-bottom: 30px;
+
+  .list {
+    list-style: none;
+    line-height: 64px;
+    border: 1px solid @color-gallery;
+    border-radius: 2px;
+
+    .item {
+      display: inline;
+      margin-right: 8px;
+
+      a {
+        .background-wild-sand;
+        .text-river-bed;
+        
+        padding: 4px 8px;
+        text-decoration: none;
+        border-radius: 2px;
+      }
+
+      &.active,
+      &:hover {
+        a {
+          .background-cardinal;
+          .text-white;
+
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+      }
+
+      &:first-child {
+        i {
+          padding-left: 5px;
+          padding-right: 7px;
+        }
+      }
+
+      &:last-child {
+        i {
+          padding-left: 7px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
